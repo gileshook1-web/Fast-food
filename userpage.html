@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fast Food App - Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="userpage.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Our Fast Food App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+    </div>
+  </div>
+</nav>
+<main class="profile-grid" id="Order-again">
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+      <div class="card">
+        <h2 class="card-title">Last order</h2>
+      <img class="burgerking" src="burgerking.jpg" alt="Burger King" >
+      <div class="card-body">
+            <h5 class="card-item">Ordered on: 2024-06-01</li>
+            <button type="button" class="btn btn-primary btn-lg">Order again</button>
+            <h6 class="card-subtitle mb-2 text-muted">Burger King</h6>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">1x Whopper</li>
+            <li class="list-group-item">1x Fries</li>
+            <li class="list-group-item">1x Coke</li>
+            <li class="list-group-item">Total: £9.50</li>
+        </ul>
+            </div>
+        </div>
+    </div>
+  <div class="col">
+    <div class="card" id="receipts" >
+        <h2 class="card-title">Receipts</h2>
+        <ul class="list-group list-group-flush">
+    <li class="list-group-item">Burger King: £9.50</li>
+    <li class="list-group-item">German donor kebab: £10.49</li>
+    <li class="list-group-item">Dominos: £22.99</li>
+    <li class="list-group-item">KFC: £15.99</li>
+    <li class="list-group-item">Pizza Hut: £18.49</li>
+    <li class="list-group-item">Subway: £12.99</li>
+    <li class="list-group-item">McDonald's: £8.99</li>
+    <li class="list-group-item">Nando's: £14.99</li>
+    <li class="list-group-item">Five Guys: £19.99</li>
+    <li class="list-group-item">Wendy's: £11.99</li>
+    <li class="list-group-item">Taco Bell: £9.99</li>
+    <li class="list-group-item">Krispy Kreme: £6.99</li>
+    <li class="list-group-item">Dunkin' Donuts: £7.99</li>
+    <li class="list-group-item">Chipotle: £13.99</li>
+
+  </ul>
+  </div>
+  
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" id="profile-card">
+      <div class="card-body">
+  <h2 class="card-title">Profile</h2>
+
+  <div class="row align-items-center">
+
+    <div class="col-md-4">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAACUCAMAAAAnDwKZAAAAMFBMVEXk5ueutLersbTn6erc3+DKztDY29y9wsTS1dff4uOxt7rN0dPV2NrHy821ur3BxsgHaUGIAAAEJ0lEQVR4nO2c25KDIAyGgYCICr7/2y7Yw6pVq5AAnfG/2mkv9puEhABJGbt169atW7du3bp1SjCpNMWOPJeUQ6+stapvpDGsLlIAqUbXiX91buxlNfYEZqzjXPClhOCdMjVAAhu0WOP9Y+q2tMMBWvdhvwUkd21RRmjcEd+T0jXFIIHZXRcv3W1LefuMCZ/qZBHG/jRgsKTKzwjjFULPOGZn1NcIPaM2lRMGxpx2hPOBsmDMiBhhw4lxzAUIKo7QM9o8voZL2WbFmGU3BBkNyEMOz4AYuxCfZnT0ZoxfiE/Gnp4xjdC7mjqDg04kJM88MKQSekbiiEmKlSci7UbYpBMSmxEQjOhFWZcZFELK/J2aE18SPRkiS844T9FtMQ0SIRdk6TuhxFkhUhU8SPEcROVpwAL0MU1DyCSaETmnuUNJqbY/RFOSwYhHKCwFoT+ZIiISnVc7RERHQmgQEbkjSd5JJ78PUVQSgLb9BZHUjDfijXgjnhdu0iHJiz+Quln9ezRqGUFzsfMLxVhbfUn7AwcDBniIVMcrxEMq2f0d3lGf7MJbYiVvQQTI0K6diE4uQaCQEAkv7xgOoiO8Sf6Bi2Sc7E13uzjpYkfEJiHtowZG6U39NHS1sWSDkKbImSvZ0+Qv0qklWZZ3/bQn8yydMD/QeABDghmHTC0mNroJJltzWyxjrjadiTEqZPI1OwWZ6tvaWMRmndeGky6uxwz73oegPeyWXgHyIq3TIE8vSKHLtPtOTdNnnVyus1vqr94WvJQJXxqOe1aFcENRvknBktuY/lNdrnl/LjBqg9J/oOsaeRmsm2ZxHnTev+NQ2+BQGLsyTdsrpfq2MdVOYMFLpUFWehEZL/lQ+HPxXTkF505ja9o5x4VYzIc5PVrVNrIcp//HTe/ROv4Ok3VITx93TquB5aYMtmtHtwm2nb9DAmqyRbi3RzvN/J3Dm2G6UWXIkz4B9m5vM/mO6d0+SlJbgunHaL63NZ1tiGwJvqy57N5tys5RDDB6A3aIj1dCYDscjI2aEzqC5HpA9LdEfEOdQYZSEgUS5LmZyShIDEsCWMw1+AHJdeJ8ss/SF06ikZRjCuSFY2gKY5fwaInUDP8d0sWFTR4TvhRjSGjz8QWNVw0JBuGZ6pJEd+04CwZ7MzmjKzdTMFDmwl1duIFEbcghYcwdKHPGc61kWKNBcYxnuiZQJwlIGAsTnmAsFikzxuP1iNsvG6njNy60dqYkHb0Uxv2QAb7E7uV4et8Dlnabgcul7LV2Q6aKhfjQdgcFYgMlgrY6ogBl9BlPGxWFwRqJRZL47KIovfGt9fkDE1BRrDy0NmPRCmxH3cqMiPMDaFoknoKF9r5W+buqnPjWvHnLlIbZ1LziqTFYgsQMscZg4YuiDOkXK9D1X39XcGDZ0TumMSeWcDWVtn/0nDrLyFpCkwAAAABJRU5ErkJggg==" class="profile-picture" alt="profile"
+           class="img-fluid map-img"
+           alt="Map Image">
+    </div>
+    <div class="col-md-8">
+      <p class="card-text">
+        <ul class="list-unstyled">
+          <li><strong>Your details:</strong></li>
+        Name: John Doe<br>
+        Email: john.doe@example.com
+
+      </p>
+
+      <p class="card-text">
+        <small class="text-body-secondary">
+          Last updated 3 mins ago
+        </small>
+      </p>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Notifications</h2>
+        <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true"></div>
+  <div class="toast-header">
+    <strong class="me-auto">Messages</strong>
+    <small class="text-body-secondary">11 mins rago</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    Rate your last order from Burger King!
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+    <p>© FastFood App</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
