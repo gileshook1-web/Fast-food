@@ -28,6 +28,7 @@ body {
   height: 50%;
   width: 50%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .receipts {
@@ -41,10 +42,18 @@ body {
     height: 50%;
     width: 50%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .map-img{
     height: 50%;
     width: 50%;
     object-fit: cover;
+    border-radius: 20px;
 }   
+
+.card-img-top {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
