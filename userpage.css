@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 16px;
+}
+
+.card {
+    background-color: #d1e7dd;
+    border: 7px solid antiquewhite;
+    border-radius: 3rem;
+    border-width: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: green;
+}
+
+.profile-card {
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 3rem;
+    border-width: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: blue;
+}
+
+.burgerking {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.receipts {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  background-color: #d1e7dd;
+}
+
+.profile-img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.map-img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}   
