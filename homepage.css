@@ -1,0 +1,119 @@
+* {
+  color: antiquewhite;
+}
+
+body {
+  margin: 0;
+  padding: 16px 16px 0px 16px;
+
+  text-align: center;
+
+  background-color: antiquewhite !important;
+}
+
+nav {
+  font-size: 24px;
+}
+
+.navbar__container {
+  background-color: rgb(10, 123, 10, 0.5) !important;
+}
+
+.welcome__container {
+  background-color: rgb(10, 123, 10, 0.5);
+  border: 2px solid black;
+  border-radius: 16px;
+
+  padding: 8px;
+  margin-top: 60px;
+
+  color: black;
+}
+
+.welcome__intro {
+  display: flex;
+  flex-direction: row;
+
+  gap: 12px;
+}
+
+.welcome__intro-desc {
+  text-align: left;
+  color: black;
+}
+
+#welcome__intro-desc-subtitle {
+  color: black;
+}
+
+.welcome__food-icons {
+  margin-top: 12px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+.food-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.restaurants__container {
+  margin-top: 8px;
+}
+
+.restaurants__pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  gap: 12px;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.welcome__photo {
+  width: 300px;
+  height: 200px;
+
+  object-fit: cover;
+}
+
+.d-block {
+  margin: 0 auto;
+  border-radius: 16px;
+
+  max-height: 500px;
+  object-fit: cover;
+}
+
+#carouselExampleCaptions {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.randomRestaurant__container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  color: black;
+}
+#footer__container {
+  margin-top: 12px;
+}
+
+#footer__wrapper {
+  justify-content: center !important;
+}
+
+@media (max-width: 768px) {
+  .d-block {
+    max-height: 309px;
+  }
+}
